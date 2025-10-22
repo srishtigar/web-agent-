@@ -1,0 +1,21 @@
+langchain
+langgraph
+langgraph-checkpoint-sqlite
+beautifulsoup4
+chromadb
+python-dotenv
+fastapi
+uvicorn
+APScheduler
+streamlit
+requests
+lxml
+
+# Google AI packages - Use latest compatible versions
+langchain-google-genai
+google-generativeai
+
+# HuggingFace for free embeddings (no API limits)
+sentence-transformers
+langchain-huggingface
+rank-bm25>=0.2.2
