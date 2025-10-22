@@ -268,9 +268,4 @@ Combines three retrieval methods for 40% better accuracy:
 
 
 
-For questions or support, please open an issue on GitHub.
-
----
-
-**Built with ❤️ using LangGraph, ChromaDB, and Google Gemini**
 
