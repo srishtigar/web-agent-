@@ -24,7 +24,7 @@ An autonomous AI agent built with **LangGraph** that scrapes websites, stores co
 - **Timestamped Results**: All executions stored with metadata in SQLite
 - **Modern UI**: Professional green/blue gradient Streamlit interface
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐         ┌──────────────────┐         ┌─────────────────┐
@@ -45,7 +45,7 @@ An autonomous AI agent built with **LangGraph** that scrapes websites, stores co
                             └─────────────────┘
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 web_agent_project/
@@ -102,7 +102,7 @@ web_agent_project/
 - **APScheduler**: Background task scheduling
 - **Python-dotenv**: Environment variable management
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.11+
