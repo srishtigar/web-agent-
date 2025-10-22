@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+web_agent_env/
+chroma_db/
+node_modules/
+.streamlit/
+*.sqlite3
+*.log
+.DS_Store
