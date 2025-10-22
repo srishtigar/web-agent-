@@ -248,12 +248,6 @@ Combines three retrieval methods for 40% better accuracy:
 - **Response Time**: Optimized with async operations
 - **Concurrent Users**: Supports multiple threads simultaneously
 
-## Security Notes
-
-- **API Keys**: Store in `.env` file, never commit to version control
-- **Input Validation**: All URLs validated before scraping
-- **Rate Limiting**: Implement rate limiting for production use
-- **CORS**: Currently allows all origins (configure for production)
 
 ## Future Enhancements
 
