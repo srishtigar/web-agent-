@@ -28,10 +28,6 @@ An autonomous AI agent built with **LangGraph** that scrapes websites, stores co
 
 ## Architecture
 
-### Low-level-Architecture
-
-![Low Level Architecture](./low-level-architecture.png)
-
 ### High-level-Architecture
 ```
 ┌─────────────────┐         ┌──────────────────┐         ┌─────────────────┐
@@ -51,6 +47,22 @@ An autonomous AI agent built with **LangGraph** that scrapes websites, stores co
                             │   (Results)     │
                             └─────────────────┘
 ```
+### Low-level-Architecture
+
+![Low Level Architecture](./low-level-architecture.png)
+
+### Marico Competitor Intelligence
+- Automated tracking of FMCG competitors with product information extraction, pricing analysis, and competitive intelligence reporting.
+  
+  [Watch Demo](./marico-.mp4)
+### Dabur Competitor Analysis
+- Real-time monitoring of e-commerce platforms for product prices, new launches, and promotional activities with structured data extraction.
+  
+  [Watch Demo](./BABUR-.mp4)
+### Batch Processing & Performance
+- Parallel vectorization and caching optimization for simultaneous monitoring of multiple competitor websites at scale.
+  
+  [Watch Batch Processing Demo](./batch_processing.mp4)
 
 ## Project Structure
 
@@ -109,18 +121,6 @@ web_agent_project/
 - **APScheduler**: Background task scheduling
 - **Python-dotenv**: Environment variable management
 
-### Marico Competitor Intelligence
-- Automated tracking of FMCG competitors with product information extraction, pricing analysis, and competitive intelligence reporting.
-  
-  [Watch Demo](./marico-.mp4)
-### Dabur Competitor Analysis
-- Real-time monitoring of e-commerce platforms for product prices, new launches, and promotional activities with structured data extraction.
-  
-  [Watch Demo](./BABUR-.mp4)
-### Batch Processing & Performance
-- Parallel vectorization and caching optimization for simultaneous monitoring of multiple competitor websites at scale.
-  
-  [Watch Batch Processing Demo](./batch_processing.mp4)
 
 ## Installation
 
