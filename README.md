@@ -115,6 +115,8 @@ web_agent_project/
 - Real-time monitoring of e-commerce platforms for product prices, new launches, and promotional activities with structured data extraction.
 ### Batch Processing & Performance
 - Parallel vectorization and caching optimization for simultaneous monitoring of multiple competitor websites at scale.
+  [Watch Batch Processing Demo](./batch_processing.mp4)
+
 ## Installation
 
 ### Prerequisites
