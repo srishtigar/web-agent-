@@ -109,6 +109,12 @@ web_agent_project/
 - **APScheduler**: Background task scheduling
 - **Python-dotenv**: Environment variable management
 
+### Marico Competitor Intelligence
+- Automated tracking of FMCG competitors with product information extraction, pricing analysis, and competitive intelligence reporting.
+### Dabur Competitor Analysis
+- Real-time monitoring of e-commerce platforms for product prices, new launches, and promotional activities with structured data extraction.
+### Batch Processing & Performance
+- Parallel vectorization and caching optimization for simultaneous monitoring of multiple competitor websites at scale.
 ## Installation
 
 ### Prerequisites
