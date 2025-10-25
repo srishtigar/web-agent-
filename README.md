@@ -28,9 +28,11 @@ An autonomous AI agent built with **LangGraph** that scrapes websites, stores co
 
 ## Architecture
 
+### Low-level-Architecture
+
 ![Low Level Architecture](./low-level-architecture.png)
 
-
+### High-level-Architecture
 ```
 ┌─────────────────┐         ┌──────────────────┐         ┌─────────────────┐
 │  Streamlit UI   │────────▶│   FastAPI        │────────▶│   LangGraph     │
