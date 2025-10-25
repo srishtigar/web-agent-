@@ -7,6 +7,8 @@ An autonomous AI agent built with **LangGraph** that scrapes websites, stores co
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-teal)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red)
 
+
+
 ## Features
 
 ### Core Capabilities
@@ -52,6 +54,7 @@ web_agent_project/
 ├── backend/
 │   ├── core/
 │   │   ├── agent.py                    # LangGraph workflow with state machines
+│   │   ├── batch_processor_langgraph.py # NEW: Module for concurrent batch processing
 │   │   ├── thread_persistence.py       # Thread management with ChromaDB
 │   │   ├── conversation_memory.py      # Semantic memory for follow-ups
 │   │   ├── scheduler_automation.py     # APScheduler task automation
@@ -66,8 +69,7 @@ web_agent_project/
 │   ├── requirements.txt                # Python dependencies
 │   └── results.db                      # SQLite database for results
 ├── frontend/
-│   ├── streamlit_app_modern.py         # Modern green/blue gradient UI
-│   └── streamlit_app_persistent.py     # Original UI with thread sidebar
+│   └── streamlit_app_persistent.py     #  UI with thread sidebar
 ├── chroma_db/                          # Thread persistence storage
 │   └── agent_vectors/                  # Document vectorstore (separate)
 ├── .gitignore
