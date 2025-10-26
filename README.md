@@ -42,7 +42,24 @@ An autonomous AI agent built with **LangGraph** that scrapes websites, stores co
 
 ![Low Level Architecture](./low-level-architecture.png)
 
+### Architecture at a glance
 
+- **Scraping layer**: scrape_with_selenium, scrape_fallback, extract_structured_data, clean_text
+
+- **Tools**: validate_url_tool, scrape_and_extract_links_tool
+
+- **Vectorization**: HF embeddings (all-MiniLM-L6-v2) + Chroma
+
+- **Retrieval**: create_hybrid_retriever (BM25 + vector) wrapped by create_smart_retriever (auto multi-query/ambiguity logic)
+
+- **Reasoning**: LLM via Groq or Gemini (env-selectable)
+
+- **Domain awareness**: integrate_smart_domain_detection tunes prompts/extraction
+
+- **Orchestration**: LangGraph nodes + conditional edges (validate_url → scrape (loop≤5) → safety_check → vectorize → query_and_respond → format)
+
+- **Caching**: in-memory dict of vectorstore + retrievers keyed by URL
+  
 ### Advanced Features
 - **Thread Management**: Create, switch, and manage conversation threads with 7-day auto-cleanup
 - **URL Change Detection**: Automatically triggers fresh scraping when URL changes
