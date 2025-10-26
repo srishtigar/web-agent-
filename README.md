@@ -51,6 +51,8 @@ An autonomous AI agent built with **LangGraph** that scrapes websites, stores co
 - **ChatGPT-like Memory**: Thread-based conversations with context retention across sessions
 - **Timestamped Results**: All executions stored with metadata in SQLite
 - **Modern UI**: Professional green/blue gradient Streamlit interface
+- **Batch processing** : Multiple urls at the same time using langraph SENDAPI()
+- **Fault tolerance** : langraph provide fault tolerance as nodes are mutable and stored in graph form, if any error occurs we can resume task from that    particular location. 
   
 ### Marico Competitor Intelligence
 - Automated tracking of FMCG competitors with product information extraction, pricing analysis, and competitive intelligence reporting.
