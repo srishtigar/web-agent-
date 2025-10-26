@@ -13,18 +13,9 @@ An autonomous AI agent built with **LangGraph** that scrapes websites, stores co
 
 ### Core Capabilities
 - **Autonomous AI Agent**: LangGraph state machine orchestrates scraping, vectorization, and question answering
-- **ChatGPT-like Memory**: Thread-based conversations with context retention across sessions
 - **Hybrid Retrieval**: Combines ChromaDB vector search, BM25, and semantic reranking (40% accuracy improvement)
 - **Intelligent Scraping**: Selenium + BeautifulSoup handles JavaScript-rendered content and lazy-loaded sections
 - **Task Automation**: APScheduler enables recurring website monitoring (hourly/daily/custom intervals)
-- **Dual Modes**: Q&A for specific answers, Report for comprehensive analysis
-
-### Advanced Features
-- **Thread Management**: Create, switch, and manage conversation threads with 7-day auto-cleanup
-- **URL Change Detection**: Automatically triggers fresh scraping when URL changes
-- **Semantic Memory**: Embeddings-based conversation context for intelligent follow-ups
-- **Timestamped Results**: All executions stored with metadata in SQLite
-- **Modern UI**: Professional green/blue gradient Streamlit interface
 
 ## Architecture
 
@@ -51,6 +42,16 @@ An autonomous AI agent built with **LangGraph** that scrapes websites, stores co
 
 ![Low Level Architecture](./low-level-architecture.png)
 
+
+### Advanced Features
+- **Thread Management**: Create, switch, and manage conversation threads with 7-day auto-cleanup
+- **URL Change Detection**: Automatically triggers fresh scraping when URL changes
+- **Semantic Memory**: Embeddings-based conversation context for intelligent follow-ups
+- **Dual Modes**: Q&A for specific answers, Report for comprehensive analysis
+- **ChatGPT-like Memory**: Thread-based conversations with context retention across sessions
+- **Timestamped Results**: All executions stored with metadata in SQLite
+- **Modern UI**: Professional green/blue gradient Streamlit interface
+  
 ### Marico Competitor Intelligence
 - Automated tracking of FMCG competitors with product information extraction, pricing analysis, and competitive intelligence reporting.
   
@@ -104,7 +105,6 @@ web_agent_project/
 - **ChromaDB**: Vector database for semantic search and thread persistence
 - **sentence-transformers**: Text embeddings (all-MiniLM-L6-v2)
 - **BM25**: Keyword-based retrieval algorithm
-- **Cross-encoder**: Semantic reranking for improved accuracy
 
 ### Web Scraping
 - **Selenium WebDriver**: Dynamic content scraping (JavaScript-rendered pages)
